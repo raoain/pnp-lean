@@ -1,0 +1,7 @@
+name = "pnp"
+version = "0.1.0"
+defaultTargets = ["Pnp"]
+
+[[lean_lib]]
+name = "Pnp"
+roots = ["Basic", "Select", "Adversary"]
