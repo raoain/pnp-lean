@@ -4,4 +4,4 @@ defaultTargets = ["Pnp"]
 
 [[lean_lib]]
 name = "Pnp"
-roots = ["Basic", "Select"]
+roots = ["Basic", "Select", "Adversary"]

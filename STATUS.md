@@ -10,7 +10,7 @@
 | `Basic.lean` | `numPaths n = 2^n`（深度 n 的串有 2^n 条） | **已证**（`lake build` 过，无 sorry） | 锁死"树展开是指数" |
 | `Select.lean` | `eq_of_same_at?`（同长、位位相同 ⇒ 同一条串） | **已证** | 锁死"位相同则同一路" |
 | `Select.lean` | `differs_somewhere`（不同路必在某一位不同） | **已证**（上一条的推论） | 锁死"一次分叉＝一次信息" |
-| `
+| `Adversary.lean` | `adversary_needs_all_bits`（只问 m<n 位 ⇒ 存在两个一致但不同的世界） | **骨架／未证**（含 `sorry`，编过但警告） | 对手下界的形状 |
 
 ## 二、两种说法分开
 
@@ -23,5 +23,5 @@
 ## 三、诚实标注
 
 - 本目录 **不产生新知识**；它是账里已有推论的**机械化副本**。
-- `
+- `Adversary.lean` 里的 `sorry` **一律视为未证**；不许在对外材料里把它当结论引用。
 - 若哪天 `lake build` 失败（比如 Lean 版本变了），**先按 `lean-toolchain` 锁版本重装，再报**，不许删文件了事。
